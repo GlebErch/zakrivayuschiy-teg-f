@@ -13,4 +13,34 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-normal), sans-serif;
+  font-variation-settings: 'wght' var(--font-weight-normal);
+  background-image: var(--bg-img);
+  background-size: cover;
+  justify-items: center;
 }
+
+.header{
+  inline-size: var(--area-width);
+  block-size: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
+  font-family: var(--font-family-accent), sans-serif;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-block-start: 100px;
+  gap: 20px;
+
+}
+
+.header__head{
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  text-transform: uppercase;
+}
+
+.header__title{
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  text-transform: uppercase;
+}
+

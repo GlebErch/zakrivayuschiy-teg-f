@@ -12,5 +12,8 @@
     repeating-linear-gradient(to right, var(--bg-grnt-color-main) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, var(--bg-grnt-color-start) 0.01%, var(--bg-grnt-color-end));
   --area-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
-
+  --padding-card-title: clamp(0.25rem, 0.228rem + 0.094vw, 0.313rem);
+  --border: 2px solid  #000;
+  --bg-color: #fff;
+  --text-shadow-color: #fff;
 }

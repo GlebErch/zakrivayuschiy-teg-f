@@ -16,7 +16,6 @@
   align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  max-inline-size: 1440;
   font-family: var(--font-family-normal), sans-serif;
   font-variation-settings: "wght" var(--font-weight-normal);
   background-image: var(--bg-img);

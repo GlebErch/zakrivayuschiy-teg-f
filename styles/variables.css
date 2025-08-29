@@ -1,22 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family-accent: 'PressStart2P';
-  --font-family-normal: 'Inter';
+  --font-family-accent: "PressStart2P";
+  --font-family-normal: "Inter";
   --font-weight-normal: 410;
   --font-weight-bold: 715;
   --bg-grnt-color-main: #d3d3d3;
   --bg-grnt-color-start: #e7e7e7;
   --bg-grnt-color-end: #1a1a1a;
-  --bg-img:
-    repeating-linear-gradient(to bottom, var(--bg-grnt-color-main) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to right, var(--bg-grnt-color-main) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, var(--bg-grnt-color-start) 0.01%, var(--bg-grnt-color-end));
+  --bg-img: repeating-linear-gradient(
+      to bottom,
+      var(--bg-grnt-color-main) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--bg-grnt-color-main) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--bg-grnt-color-start) 0.01%,
+      var(--bg-grnt-color-end)
+    );
   --area-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   --padding-card-title: clamp(0.25rem, 0.228rem + 0.094vw, 0.313rem);
-  --border: 2px solid  #000;
+  --border: 2px solid #000;
   --bg-color: #fff;
   --text-shadow-color: #fff;
-  --heart-contour-color:#000;
-  --heart-fill-color: #FF0000;
-  --heart-color:#fff;
+  --heart-contour-color: #000;
+  --heart-fill-color: #ff0000;
+  --heart-color: #fff;
 }

@@ -20,6 +20,7 @@
   font-variation-settings: "wght" var(--font-weight-normal);
   background-image: var(--bg-img);
   background-size: cover;
+  background-attachment: fixed;
   justify-self: center;
   width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
@@ -27,7 +28,6 @@
 /*Заголовок*/
 .header {
   inline-size: var(--area-width);
-  block-size: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
   font-family: var(--font-family-accent), sans-serif;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,8 @@
   background-color: var(--bg-color);
   margin-block-start: 98px;
   margin-block-end: 98px;
+  padding-block-start: 130px;
+  padding-block-end: 130px;
   gap: 20px;
 }
 
@@ -80,7 +82,7 @@
   font-size: 18px;
   line-height: 21px;
   padding-inline: 25px;
-  padding-block-start: 25px;
+  padding-block-start: 23px;
 }
 
 .card__media {
@@ -91,8 +93,9 @@
 }
 
 .card__img {
-  display: block;
-  width: 100%;
+width: 100%;
+object-fit:contain;
+object-position: center;
 }
 
 .card__img-invert {
@@ -223,8 +226,7 @@ dialog:not([open]) {
 
 .dialog {
   max-width: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
-  height: 191px;
-  padding: 0;
+  padding: 30;
   font-family: var(--font-family-accent), sans-serif;
   line-height: 150%;
   background-color: #fff;

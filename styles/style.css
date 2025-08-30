@@ -28,7 +28,7 @@
 /*Заголовок*/
 .header {
   inline-size: var(--area-width);
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +131,7 @@ object-position: center;
   content: "";
   position: absolute;
   opacity: 50%;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   text-shadow: -1px 0 var(--text-shadow-color), 0 1px var(--text-shadow-color),
@@ -159,7 +159,7 @@ object-position: center;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 7px;
+  gap: 7px; /* был 7px*/
   margin-block: 25px;
   padding-inline-end: 25px;
 }
@@ -171,9 +171,12 @@ object-position: center;
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
-  inline-size: 38px;
-  block-size: 38px;
+  width: 38px; 
+  height: 38px;
   padding: 0;
   outline: none;
   border: 2px solid transparent;
@@ -190,7 +193,7 @@ object-position: center;
 }
 
 .button__text {
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
   display: block;
   text-align: center;
@@ -225,16 +228,17 @@ dialog:not([open]) {
 }
 
 .dialog {
-  max-width: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
+  inline-size: clamp(21.25rem, 20.964rem + 1.221vw, 22.063rem);
   padding: 30;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   line-height: 150%;
   background-color: #fff;
-  padding-inline: clamp(2.5rem, 2.72rem + -0.939vw, 1.875rem);
+  padding-inline: clamp(1.875rem, 6rem + -4.7vw, 2.5rem);
   padding-block: 30px;
 }
 
 dialog[open] .form-dialog {
+
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 20px;
@@ -260,7 +264,7 @@ dialog[open] .form-dialog {
   align-self: center;
   height: 38px;
   font-size: 14px;
-  inline-size: clamp(16.313rem, 15.608rem + 3.005vw, 18.313rem);
+  width: 100%;
 }
 
 .dialog[open]::backdrop {
@@ -272,9 +276,10 @@ dialog[open] .form-dialog {
     flex-direction: column;
     inline-size: 306px;
     block-size: 84px;
+    padding: 0px;
   }
 
-  .floppy-icon {
+  .button-floppy .floppy-icon {
     width: 28px;
     height: 28px;
   }

@@ -12,11 +12,13 @@
 
 .like-icon {
   cursor: pointer;
-  transform-origin: center;
-object-fit:contain;
-object-position: center;
+  object-fit: contain;
+  object-position: center;
 }
 
+.heart {
+  transform-origin: center;
+}
 
 .core {
   transition: fill 0.3s 0.03s linear;

@@ -36,8 +36,9 @@
   background-color: var(--bg-color);
   margin-block-start: 98px;
   margin-block-end: 98px;
-  padding-block-start: 130px;
-  padding-block-end: 130px;
+  padding-block: clamp(7.5rem, 7.28rem + 0.939vw, 8.125rem);
+/*  padding-block-start: 130px;
+  padding-block-end: 130px;*/
   gap: 20px;
 }
 
@@ -73,9 +74,10 @@
 .card__title {
   font-size: 18px;
   font-variation-settings: "wght" var(--font-weight-bold);
-  padding-inline-start: 10px;
-  padding-block-start: var(--padding-card-title);
-  padding-block-end: 4px;
+  padding-inline: 10px;
+  padding-block: 4px;
+  line-height: 125%; /*Не знаю почему, но при 100% фигмовское больше, хотя в фигме 100%*/
+
 }
 
 .card__text {
